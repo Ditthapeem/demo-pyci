@@ -1,5 +1,5 @@
 def variance(data):
-    """Returns the population variance of a list (array) of numbers in data.
+    """Return the population variance of a list (array) of numbers in data.
 
     The variance is the sum of squared differences between data values
     and their mean, divided by the number of items in the list (n).
@@ -34,5 +34,11 @@ def variance(data):
 
 
 def stdev(data):
-    """The population standard deviation of a list of data values."""
+    """Find the population standard deviation of a list of data values.
+
+    Args:
+        data: list of numbers for which variance will be computed.
+    Returns:
+        population standard deviation of a list of data values.
+    """
     return sqrt(variance(data))
